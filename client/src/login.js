@@ -70,7 +70,7 @@ registerForm.addEventListener('submit', (e) => {
         })
         .then(data => {
             if(data.status === 'true'){
-                location.href = 'confirm.html'
+                location.href = './confirm.html'
             }
             else{
                 registerErrorMsg.textContent = data.message;
